@@ -1,20 +1,69 @@
-// Student_Course_Managment_System.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Person.h"
+#include "Student.h"
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "            *************************************************************************        " << endl;
+    cout << "                              Student Course Management System                               " << endl;
+    cout << "            *************************************************************************        " << endl;
+    cout << endl;
+    cout << "                                       Operation Menu                                        " << endl;
+    cout << "                                       **************                                        " << endl;
+    cout << "                                       1. Add Student.                                       " << endl;
+    cout << "                                       2. Exit.                                              " << endl;
+
+    int choice;
+
+    Student s;
+
+    while (true) {
+        
+        cout << "Enter choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            s.addstudent();
+        }
+        else if (choice == 2) {
+            break;
+        }
+        else {
+            cout << "Invalid choice!\n";
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //Person p1;
+    //p1.set_Name("Youssef");
+    //p1.set_Age(32);
+    //cout << "My Name is:" << p1.get_Name() << endl;
+    //cout << "My Age is:" << p1.get_Age() << endl;
+
+
+    //Student s;
+
+    //s.set_ID(1);
+    //s.set_Name("Ali");
+    //s.set_GPA(3.5);
+
+    //s.add_Course("Math");
+    //s.add_Course("Math"); 
+    //s.add_Course("CS");
+
+    //s.Display();
+
+    //cout << "Courses:\n";
+    //s.get_Course();
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
