@@ -10,9 +10,7 @@ A console-based C++ application for managing students and their enrolled courses
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [UML Class Diagram](#uml-class-diagram)
-- [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 
 ---
 
@@ -80,7 +78,7 @@ The system provides a menu-driven interface that allows users to add, remove, se
 └──────────────────────────┘
 
 ┌───────────────────────────────────┐
-│         CourseManager              │
+│         CourseManager             │
 ├───────────────────────────────────┤
 │ - students : vector<Student>      │
 ├───────────────────────────────────┤
@@ -95,35 +93,6 @@ The system provides a menu-driven interface that allows users to add, remove, se
 ```
 
 > 📄 A full UML diagram (PDF/image) is included in the submission.
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- A C++ compiler supporting **C++17** (e.g., `g++`, `clang++`, MSVC)
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/student-course-management.git
-cd student-course-management
-```
-
-### Compile
-
-```bash
-g++ -std=c++17 -o student_manager main.cpp
-```
-
-### Run
-
-```bash
-./student_manager
-```
-
-> **Windows users:** use `student_manager.exe`
 
 ---
 
@@ -166,9 +135,3 @@ Choice: 7
 ```
 
 ---
-
-
-
-## License
-
-This project is for **educational purposes only**.
